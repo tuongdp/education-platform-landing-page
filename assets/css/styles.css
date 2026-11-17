@@ -577,16 +577,14 @@ a {
     margin: 16px auto 55px;
 }
 
-.blog .blog-list {
+.blog .blog-list > * {
     padding: 0 0 32px;
     margin: 0 0 -32px;
     overflow: hidden;
-    display: flex;
-    gap: 30px;
+    flex-wrap: nowrap;
 }
 
 .blog .item {
-    width: calc((100% / 3) - 20px);
     background: #fff;
     border-radius: 16px;
     flex-shrink: 0;
@@ -684,15 +682,8 @@ a {
 }
 
 .footer .row {
-    display: flex;
-    gap: 130px;
     padding-bottom: 38px;
     border-bottom: 1px solid #59554b;
-}
-
-.footer .row .column-logo {
-    width: 282px;
-    flex-shrink: 0;
 }
 
 .footer .column-logo .desc {
@@ -708,7 +699,7 @@ a {
     gap: 18px;
 }
 
-.footer .column .title {
+.footer .title {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
@@ -719,32 +710,32 @@ a {
     border-bottom: 1px solid #59554b;
 }
 
-.footer .column .list {
+.footer .list {
     margin-top: 28px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.footer .column .list li a {
+.footer .list li a {
     color: #bfbcb2;
     font-size: 1.4rem;
     line-height: 1.85714; /* 185.714% */
     white-space: nowrap;
 }
 
-.footer .column .list li a strong {
+.footer .list li a strong {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.85714; /* 185.714% */
 }
 
-.footer .column .list li.location {
+.footer .list li.location {
     width: 231px;
 }
 
-.footer .column .list li.location a {
+.footer .list li.location a {
     white-space: normal;
 }
 
